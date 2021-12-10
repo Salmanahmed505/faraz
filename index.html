@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body ng-app="">
+    <div ng-init="kquantity=1;kprice=1200;cquantity=1;cprice=60;
+    rquantity=1;rprice=12"></div>
+    <table>
+        <tr>
+            <td>enter full karahi quantity</td>
+            <td><input type="number" ng-model="kquantity"></td>
+        </tr>
+        <tr>
+            <td>one full karahi price</td>
+            <td><input type="number" ng-model="kprice" readonly></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><input type="number" ng-model="{{kquantity*kprice}}"> total amount of karahi is</td>
+        </tr>
+        <tr>
+            <td>one cold drink price</td>
+            <td><input type="number" ng-model="cprice"></td>
+        </tr>
+        <tr>
+            <td>enter cold drink quantity</td>
+            <td><input type="number" ng-model="cquantity"></td>
+        </tr>
+        <tr>
+            <td>total amount of cold drink is</td>
+
+        </tr>
+        <tr>
+            <td>one roti price</td>
+            <td><input type="number" ng-model="rprice"></td>
+        </tr>
+        <tr></tr>
+    </table>
+</body>
+</html>
